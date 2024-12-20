@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-const ArticleView = ()=>{
-
-    return(
-        <h1>
-            뷰
-        </h1>
-    )
-=======
 import { useEffect, useState } from "react"
 import { deleteArticle, getArticleDetail } from "../API/article.js"
 import { useNavigate, useParams } from "react-router-dom";
@@ -70,7 +61,6 @@ const ArticleView = () => {
             {result == null ? <></> : <ResultModal title='삭제' contents='완료' callbackFn={closeModal} />}
         </div>
     );
->>>>>>> 7038447 (게시판 중간단계)
 }
 
 export default ArticleView

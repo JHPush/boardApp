@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-const ArticleModify = ()=>{
-
-    return(
-        <h1>
-            모디파이
-        </h1>
-=======
 import { useEffect, useState } from "react"
 import { Form, Col, Row, Button } from 'react-bootstrap'
 import { getArticleDetail, postModify } from "../API/article.js"
@@ -84,7 +76,6 @@ const ArticleModify = () => {
             </Row>
             {result == null ? <></> : <ResultModal title={'게시글을'} contents={'수정완료'} callbackFn={closeModal} />}
         </>
->>>>>>> 7038447 (게시판 중간단계)
     )
 }
 
