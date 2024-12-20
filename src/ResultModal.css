@@ -30,7 +30,11 @@
 }
 
 /* 본문 콘텐츠 스타일 */
+<<<<<<< HEAD
 .modal-content p {
+=======
+.modal-contents h2 {
+>>>>>>> 7038447 (게시판 중간단계)
     margin: 20px 0;
     font-size: 1rem;
     color: #666;

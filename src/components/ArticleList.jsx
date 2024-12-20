@@ -1,6 +1,10 @@
 import { Table } from "react-bootstrap";
 import { getArticleList } from "../API/article.js";
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
+=======
+import { Link } from "react-router-dom";
+>>>>>>> 7038447 (게시판 중간단계)
 
 const ArticleList = () => {
     const [articles, setArticles]= useState([]);
@@ -29,7 +33,11 @@ const ArticleList = () => {
                         articles.map((article)=>{
                         return(
                         <tr key={article.id}>
+<<<<<<< HEAD
                             <td>{article.title}</td>
+=======
+                            <td><Link to = {`/view/${article.id}`}>{article.title}</Link></td>
+>>>>>>> 7038447 (게시판 중간단계)
                             <td>{article.writer}</td>
                             <td>{new Date(article.reg_date).toString()}</td>
                         </tr>
